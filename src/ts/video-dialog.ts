@@ -11,7 +11,7 @@ closeButton.onclick = () => {
       dialog.style.display = "none"
     })
     .catch(error => {
-      console.log("Play failed:", error)
+      console.error("Play failed:", error)
     })
 }
 
@@ -29,6 +29,6 @@ playButton.onclick = () => {
       dialog.style.display = "none"
     })
     .catch(error => {
-      console.log("Play failed:", error)
+      console.error("Play failed:", error)
     })
 }

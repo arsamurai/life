@@ -110,6 +110,18 @@ body {
   .text-stroke-shadow {
     @apply text-stroke-3 2xl:text-stroke-8;
   }
+
+  .swiper {
+    @apply h-full w-full
+  }
+
+  .swiper.prizes-swiper {
+    @apply xl:min-w-[1700px] z-0
+  }
+  
+  .swiper.prizes-swiper .swiper-slide {
+    @apply flex items-end justify-center
+  }
 }
 
 body[data-aos-duration="7000"] [data-aos],
