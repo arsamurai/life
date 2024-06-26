@@ -138,7 +138,7 @@
             autoplay
             controls
           >
-            <source src="/tramp.mp4" type="video/mp4" />
+            <source src="/video.mp4" type="video/mp4" />
           </video>
           <div
             class="absolute bottom-10 left-2/4 z-[1] mx-auto w-full max-w-[217px] -translate-x-2/4 text-center font-bangers text-6xl leading-[56px] md:max-w-[316px] md:text-[90px] md:leading-[80px] 2xl:bottom-12 2xl:max-w-[550px] 2xl:text-[158px] 2xl:leading-[135px]"
@@ -520,7 +520,7 @@
           class="absolute inset-0 z-[-1] h-full w-full object-cover object-top"
         />
         <div
-          class="section-title z-[1] mx-auto w-full max-w-[144px] text-center md:max-w-[220px] 2xl:max-w-[295px]"
+          class="section-title relative z-[1] mx-auto w-full max-w-[144px] text-center md:max-w-[220px] 2xl:max-w-[295px]"
         >
           <div data-aos="fade-down">
             <h2 class="text-stroke-shadow text-white">prizes</h2>
@@ -530,11 +530,17 @@
             >
           </div>
         </div>
-        <div class="flex justify-center h-full">
+        <div class="flex h-full justify-center">
           <div class="swiper prizes-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="relative right-5 xl:right-0" data-aos="fade-up" data-aos-offset="200" data-aos-delay="600">
+                <div
+                  id="tombstone"
+                  class="relative right-5 xl:right-0"
+                  data-aos="fade-up"
+                  data-aos-offset="-100"
+                  data-aos-delay="600"
+                >
                   <div
                     class="absolute bottom-[96px] right-[69px] z-[-1] md:bottom-[135px] md:right-[114px] xl:bottom-[155px] xl:right-0"
                   >
@@ -568,6 +574,7 @@
               </div>
               <div class="swiper-slide">
                 <div
+                  id="tombstone"
                   class="relative right-5 xl:right-0"
                   data-aos="fade-up"
                   data-aos-offset="-100"
@@ -601,9 +608,10 @@
               </div>
               <div class="swiper-slide">
                 <div
+                  id="tombstone"
                   class="relative right-5 xl:right-0"
                   data-aos="fade-up"
-                  data-aos-offset="-150"
+                  data-aos-offset="-100"
                   data-aos-delay="900"
                 >
                   <div
@@ -1177,11 +1185,10 @@
                 </div>
               </div>
             </div>
-            <img
-              src="/images/tramp.png"
-              alt="tramp"
-              class="z-[1] -mt-4 w-[375px] md:absolute md:-top-10 md:left-2/4 md:z-0 md:mt-0 md:-translate-x-2/4 lg:-top-28 lg:w-[448px] xl:-top-12 xl:w-[548px] 2xl:-top-48 2xl:w-[848px]"
-            />
+            <div
+              class="z-[1] -mt-4 flex h-[472px] w-[375px] items-start justify-center md:absolute md:-top-10 md:left-2/4 md:z-0 md:mt-0 md:-translate-x-2/4 lg:-top-28 lg:h-[669px] lg:w-[448px] xl:-top-12 xl:h-[769px] xl:w-[548px] 2xl:-top-48 2xl:h-[1069px] 2xl:w-[848px]"
+              data-3d-scene
+            ></div>
             <div class="-mt-4 flex flex-col md:m-0 md:items-end">
               <div
                 class="relative h-[241px] w-[276px] px-[55px] py-7 md:mr-10 xl:h-[342px] xl:w-[395px] xl:px-10 xl:py-6"
@@ -1912,6 +1919,7 @@
         <img
           src="/images/animals/animals-1.png"
           alt="animal"
+          id="animal"
           class="absolute bottom-0 right-[163px] z-[3] h-[100px] w-[80px] lg:left-[75px] lg:right-auto lg:z-[2] lg:h-[220px] lg:w-[155px]"
           data-aos="fade-up"
           data-aos-offset="-80"
@@ -1919,30 +1927,32 @@
         <img
           src="/images/animals/animals-2.png"
           alt="animal"
+          id="animal"
           class="absolute bottom-0 right-[86px] z-[2] h-[180px] w-[100px] lg:left-[200px] lg:right-auto lg:z-[1] lg:h-[381px] lg:w-[223px]"
           data-aos="fade-up"
           data-aos-delay="600"
-          data-aos-offset="81"
         />
         <img
           src="/images/animals/animals-3.png"
           alt="animal"
+          id="animal"
           class="absolute bottom-0 right-[22px] z-[1] h-[160px] w-[114px] lg:left-[360px] lg:right-auto lg:z-0 lg:h-[339px] lg:w-[228px]"
           data-aos="fade-up"
           data-aos-delay="1200"
-          data-aos-offset="39"
         />
         <img
           src="/images/animals/animals-4.png"
           alt="animal"
+          id="animal"
           class="absolute bottom-0 right-[-44px] h-[100px] w-[130px] lg:right-[518px] lg:h-[215px] lg:w-[260px]"
           data-aos="fade-up"
           data-aos-delay="1800"
-          data-aos-offset="-175"
+          data-aos-offset="-150"
         />
         <img
           src="/images/animals/animals-5.png"
           alt="animal"
+          id="animal"
           class="absolute bottom-0 left-[-23px] z-[2] h-[120px] w-[100px] lg:left-auto lg:right-[417px] lg:h-[260px] lg:w-[195px]"
           data-aos="fade-up"
           data-aos-delay="1500"
@@ -1951,21 +1961,22 @@
         <img
           src="/images/animals/animals-6.png"
           alt="animal"
+          id="animal"
           class="absolute bottom-0 left-[47px] z-[1] h-[180px] w-[150px] lg:left-auto lg:right-[163px] lg:h-[400px] lg:w-[320px]"
           data-aos="fade-up"
           data-aos-delay="900"
-          data-aos-offset="100"
         />
         <img
           src="/images/animals/animals-7.png"
           alt="animal"
+          id="animal"
           class="absolute bottom-0 left-[138px] h-[210px] w-[140px] lg:left-auto lg:right-0 lg:h-[436px] lg:w-[279px]"
           data-aos="fade-up"
           data-aos-delay="300"
-          data-aos-offset="136"
         />
       </section>
 
+      <!-- SOUND VIDEO DIALOG -->
       <div
         id="video-dialog"
         class="bg-black-0.8 fixed inset-0 z-10 h-full w-full overflow-auto bg-black-50 p-2.5"
