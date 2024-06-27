@@ -26,6 +26,9 @@ const addAudio = (event: Aos.AosEvent, id: string, audio: HTMLAudioElement) => {
 }
 
 document.addEventListener("aos:in", async event => {
-  addAudio(event, "tombstone", tombstoneAudio)
+  if (window.innerWidth >= 1280) {
+    addAudio(event, "tombstone", tombstoneAudio)
+  }
+
   addAudio(event, "animal", fadeAudio)
 })

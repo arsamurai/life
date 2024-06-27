@@ -66,6 +66,18 @@ export default {
   plugins: [
     function ({ addUtilities }) {
       const newUtilities = {
+        ".text-stroke-1": {
+          "text-shadow": `
+            -1px -1px 0 #000, 1px 1px 0 #000, 
+            -1px 1px 0 #000, 1px -1px 0 #000, 
+            0 -1px 0 #000, 0 1px 0 #000, 
+            -1px 0 0 #000, 1px 0 0 #000,
+            0.5px -1px 0 #000, -0.5px 1px 0 #000,
+            0.5px 1px 0 #000, -0.5px -1px 0 #000,
+            1px 0.5px 0 #000, -1px -0.5px 0 #000,
+            1px -0.5px 0 #000, -1px 0.5px 0 #000
+          `,
+        },
         ".text-stroke-2": {
           "text-shadow": `
             -2px -2px 0 #000, 2px 2px 0 #000, 
